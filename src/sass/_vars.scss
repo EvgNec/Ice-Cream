@@ -1,28 +1,29 @@
 :root {
   /* основний колір тексту */
-  --primary_text-color: #FCFCFC;
+  --primary_text-color: #fcfcfc;
   /* вторичний чорний колір*/
   --secondary-black-color: #131313;
   /* колір фону */
-  --primari-bg-color: #84A278;
-    /* колір фону світлий*/
-  --primari-light-bg-color:#84A178;
+  --primari-bg-color: #84a278;
+  /* колір фону світлий*/
+  --primari-light-bg-color: #84a178;
   /* вторичний білий колір фону */
-  --secondary-bg-color: #FCFCFC;
+  --secondary-bg-color: #fcfcfc;
   /* колір фону жовтий*/
-  --yellow-bg-color:  #EFD478;
-   /* колір фону темно-жовтий*/
-  --dark-yellow-bg-color:#F8D24E;
-    /* колір фону темно-зелений*/
-  --dark-green-bg-color: #0A8817;
-     /* колір фону сірий*/
-  --gray-bg-color: #ABABAB;
+  --yellow-bg-color: #efd478;
+  /* колір фону темно-жовтий*/
+  --dark-yellow-bg-color: #f8d24e;
+  /* колір фону темно-зелений*/
+  --dark-green-bg-color: #0a8817;
+  /* колір фону сірий*/
+  --gray-bg-color: #ababab;
   /* колір фону фісташковий*/
-  --pistachio-bg-color:#D6936D;
- 
+  --pistachio-bg-color: #d6936d;
+
   --main-font: 'Montserrat', sans-serif;
   --secondary-font: 'Seymour One', sans-serif;
 
   --size-mobile: 480px;
   --size-tablets: 768px;
   --size-pc: 1200px;
+}
