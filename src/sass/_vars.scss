@@ -1,4 +1,8 @@
 :root {
+
+  --size-mobile: 480px;
+  --size-tablets: 768px;
+  --size-pc: 1200px;
   /* основний колір тексту */
   --primary_text-color: #fcfcfc;
   /* вторичний чорний колір*/
@@ -23,7 +27,6 @@
   --main-font: 'Montserrat', sans-serif;
   --secondary-font: 'Seymour One', sans-serif;
 
-  --size-mobile: 480px;
-  --size-tablets: 768px;
-  --size-pc: 1200px;
+
 }
+ 
