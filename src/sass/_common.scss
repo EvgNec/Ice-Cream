@@ -6,3 +6,27 @@
 .list {
   list-style: none;
 }
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include respond-min('phone') {
+    width: var(--size-mobile);
+  }
+
+  @include respond-min('tablets') {
+    width: var(--size-tablets);
+    padding-left: 32px;
+    padding-right: 32px;
+
+  }
+
+  @include respond-min('pc') {
+    width: var(--size-pc);
+    padding-left: 16px;
+    padding-right: 16px;
+
+  }
+}
