@@ -1,8 +1,13 @@
-@import './common';
-@import './example';
-
 @import './vars';
-@import './hiden';
 @import './mixin';
+
+@import './common';
+
+@import './hiden';
 @import './reset';
+
+@import './footer';
+@import './advantages';
 @import './custom-reviews';
+@import './our-location-modal';
+@import './franchise';
