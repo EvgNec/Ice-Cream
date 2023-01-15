@@ -18,7 +18,8 @@
   overflow: hidden;
   position: absolute;
   top: -32px;
-  @include respond-min('tablets') {
+  z-index: 1;
+  @include respond-min('phone') {
     top: -28px;
   }
   @include respond-min('tablets') {
@@ -28,13 +29,6 @@
     bottom: -198px;
   }
 }
-<<<<<<< Updated upstream
-
-.review__wallpapers {
-  overflow: hidden;
-}
-=======
->>>>>>> Stashed changes
 
 .review__wallpapers,
 .review__wallpaper-1,
@@ -58,7 +52,6 @@
 }
 .review__wallpaper-1:nth-child(1) {
   animation: first 10s infinite;
-
   @include respond-min('phone') {
     animation: first-480 10s infinite;
   }
@@ -68,7 +61,6 @@
   @include respond-min('pc') {
     animation: first-1200 10s infinite;
   }
-
 }
 .review__wallpaper-2:nth-child(2) {
   animation: second 10s infinite;
@@ -164,9 +156,6 @@
     transform: translate(0, -260px);
   }
 }
-
-
-
 @keyframes first-480 {
   0%,
   5%,
@@ -333,6 +322,7 @@
     transform: translate(1200px, 0);
   }
 }
+
 @keyframes second-1200 {
   20%,
   35%,
@@ -370,9 +360,3 @@
     transform: translate(0, -844px);
   }
 }
-
-
-
-
-
-

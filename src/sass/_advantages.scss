@@ -1,0 +1,191 @@
+/* ADVANTAGES */
+.section-advantages {
+    background-color: var(--primari-light-bg-color);
+    padding-top: 60px;
+}
+
+.item__cow::before {
+    content: url(../images/advant/cow.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark-yellow-bg-color);
+    border-radius: 50%;
+    animation: infinite 1000ms;
+    animation-name: changeBgColor;
+    animation-duration: 3000ms;
+}
+
+@keyframes changeBgColor {
+    0% {
+        background-color: rgb(242, 245, 63);
+    }
+
+    50% {
+        background-color: rgb(241, 125, 58);
+    }
+
+    100% {
+        background-color: rgb(244, 167, 204);
+    }
+}
+
+.item__weight::before {
+    content: url(../images/advant/weight.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark-yellow-bg-color);
+    border-radius: 50%;
+    animation: infinite 1000ms;
+    animation-name: changeBgColor;
+    animation-duration: 3000ms;
+
+}
+
+.item__icecream::before {
+    content: url(../images/advant/icecream.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    background-color: var(--dark-yellow-bg-color);
+    border-radius: 50%;
+    animation: infinite 1000ms;
+    animation-name: changeBgColor;
+    animation-duration: 3000ms;
+
+}
+
+.section-advantages__point {
+    font-family: var(--main-font);
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: var(--primary_text-color);
+
+}
+
+.section-advantages__text {
+    font-family: var(--main-font);
+    font-style: normal;
+    padding-top: 12px;
+    color: var(--primary_text-color);
+
+}
+
+@media screen and (max-width: 767px) {
+    .section-advantages {
+        padding-top: 50px;
+        padding-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-advantages__list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 230px;
+        margin: auto;
+    }
+
+    .section-advantages__item {
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .section-advantages__point {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.2;
+        padding-top: 16px;
+        text-transform: uppercase;
+    }
+
+    .section-advantages__text {
+        padding-top: 16px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .section-advantages {
+        padding-top: 60;
+        padding-bottom: 204px;
+    }
+
+    .section-advantages__list {
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+
+    }
+
+    .section-advantages__item {
+        text-align: center;
+        width: 152px;
+    }
+
+    .section-advantages__text {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .section-advantages__point {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.2;
+        padding-top: 32px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .section-advantages {
+        padding-bottom: 178px;
+        padding-top: 60px;
+    }
+
+    .section-advantages__list {
+        gap: 32px;
+        justify-content: center;
+
+    }
+
+    .section-advantages__item {
+        text-align: center;
+        width: 368px;
+    }
+
+    .section-advantages__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.7;
+        width: 350px;
+        letter-spacing: 0.02em;
+        padding-top: 0px;
+    }
+
+    .section-advantages__point {
+        font-weight: 700;
+        font-size: 58px;
+        line-height: 1.7;
+        padding-top: 35px;
+        padding-bottom: 12px;
+    }
+}

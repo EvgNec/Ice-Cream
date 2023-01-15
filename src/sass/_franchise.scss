@@ -1,0 +1,144 @@
+.franchise__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  @include respond-min('tablets') {
+    gap: 32px;
+  }
+}
+.franchise {
+  position: absolute;
+  width: 280px;
+  height: 674px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 300ms linear;
+  background: var(--primary_text-color);
+  border-radius: 10px;
+  padding: 28px;
+  @include respond-min('tablets') {
+    width: 568px;
+    height: 668px;
+    padding: 32px 60px;
+  }
+}
+.modal__form-label {
+  display: none;
+}
+.franchise__title {
+  font-family: var(--secondary-font);
+  color: var(--secondary-black-color);
+  @include font(16, 400, 24, 0);
+  text-align: center;
+  margin-bottom: 20px;
+  @include respond-min('tablets') {
+    @include font(20, 400, 28, 0);
+    margin-bottom: 24px;
+  }
+}
+
+.franchise__list p {
+  text-align: left;
+  @include font(14, 400, 20, 0);
+  @include respond-min('tablets') {
+    @include font(16, 400, 22, 0);
+  }
+}
+.franchise__field {
+  width: 100%;
+  text-align: center;
+}
+.franchise-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  @include font(12, 400, 17, 0);
+  @include respond-min('tablets') {
+    gap: 16px;
+  }
+  & input {
+    display: block;
+    height: 32px;
+    padding: 8px 12px;
+    margin: 0;
+    width: 100%;
+    color: var(--secondary-black-color);
+    border-radius: 10px;
+    border-color: var(--primari-light-bg-color);
+    &::placeholder {
+      color: var(--secondary-black-color);
+    }
+    @include respond-min('tablets') {
+      height: 42px;
+      padding: 11px 16px;
+    }
+  }
+
+  & textarea {
+    display: inline-block;
+    height: 64px;
+    margin: 0;
+    padding: 8px 12px;
+    width: 100%;
+    color: var(--secondary-black-color);
+    border-radius: 10px;
+    border-color: var(--primari-light-bg-color);
+    @include respond-min('tablets') {
+      height: 84px;
+      padding: 11px 16px;
+    }
+    &::placeholder {
+      color: var(--secondary-black-color);
+    }
+  }
+}
+
+.btn-submit__btn {
+  background-color: var(--dark-yellow-bg-color);
+  color: var(--secondary-black-color);
+  @include font(12, 600, 15, 0);
+  border: none;
+  border-radius: 10px;
+  width: 114px;
+  height: 42px;
+  @include respond-min('tablets') {
+    width: 121px;
+    @include font(14, 600, 17, 0);
+  }
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--dark-green-bg-color);
+  }
+  &:focus {
+    color: var(--primary_text-color);
+    background-color: var(--dark-green-bg-color);
+    fill: var(--primary_text-color);
+    outline: none;
+  }
+}
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  fill: var(--secondary-black-color);
+  background: var(--primary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+  &:hover {
+    fill: var(--accent_color);
+  }
+}

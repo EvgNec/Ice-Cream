@@ -1,0 +1,164 @@
+.reviews {
+  position: relative;
+  background-image: url(../images/reviews/Backgroud_mobile.jpg);
+  padding-top: 178px;
+  padding-bottom: 393px;
+  @include respond-min('phone') {
+    padding-top: 257px;
+    padding-bottom: 409px;
+  }
+  @include respond-min('tablets') {
+    padding-top: 283px;
+    padding-bottom: 379px;
+    background-image: url(../images/reviews/Background_tablet.jpg);
+  }
+  @include respond-min('pc') {
+    padding-top: 464px;
+    padding-bottom: 228px;
+    background-image: url(../images/reviews/Backgroud_desktop.jpg);
+  }
+}
+.custom-reviews {
+  padding: 0;
+
+  width: 280px;
+  height: 466px;
+  overflow: hidden;
+  @include respond-min('tablets') {
+    width: 705px;
+    height: 355px;
+  }
+  @include respond-min('pc') {
+    width: 968px;
+    height: 361px;
+  }
+}
+
+.slider {
+  width: 33.33%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  transition: all 400ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.slider img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  animation-name: scaleImg;
+  animation-duration: 6000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes scaleImg {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#client1:checked ~ .s1 {
+  margin-left: 0;
+}
+#client2:checked ~ .s1 {
+  transform: translateX(100%);
+}
+#client2:checked ~ .s2 {
+  margin-left: -33.33%;
+}
+#client3:checked ~ .s3 {
+  margin-left: -66.66%;
+}
+#client3:checked ~ .s1 {
+  transform: translateX(100%);
+}
+
+.slides {
+  width: 300%;
+  display: flex;
+}
+
+.main-comment {
+  display: flex;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 280px;
+  height: 256px;
+  border-radius: 10px;
+  background-color: var(--primari-light-bg-color);
+  transition: box-shadow 350ms;
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  @include respond-min('tablets') {
+    width: 705px;
+    height: 138px;
+    border-radius: 24px;
+  }
+  @include respond-min('pc') {
+    width: 968px;
+    height: 138px;
+  }
+}
+.comments__client {
+  padding: 0 39px;
+  text-align: center;
+  font-style: normal;
+  @include font($fs: 12, $fw: 400, $lh: 31, $ls: 0.04);
+  color: var(--secondary-bg-color);
+  @include respond-min('tablets') {
+    padding: 0 80px;
+    @include font($fs: 14, $fw: 500, $lh: 26, $ls: 0.04);
+  }
+  @include respond-min('pc') {
+    padding: 0 109px;
+    @include font($fs: 16, $fw: null, $lh: 30, $ls: null);
+  }
+}
+
+.reviews__city {
+  @include font($fs: 20, $fw: 500, $lh: 37, $ls: 0.04);
+  color: var(--secondary-black-color);
+
+  @include respond-min('tablets') {
+    @include font($fs: 16, $fw: null, $lh: 30, $ls: null);
+  }
+}
+
+.slider__navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  @include respond-min('pc') {
+    margin-top: 32px;
+  }
+}
+
+.radio-nav {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--main-radio-btn-color);
+  cursor: pointer;
+  transition: background-color 450ms;
+  &:not(:last-child) {
+    margin-right: 18px;
+  }
+  &:hover,
+  &:focus {
+    background-color: var(--primari-light-bg-color);
+  }
+}
+
+input[name='slide'] {
+  position: absolute;
+  visibility: hidden;
+}
