@@ -1,3 +1,9 @@
+.backdrop {
+  &.is-hidden .franchise {
+    transform: translate(-50%, -50%) scale(0, 9);
+  }
+}
+
 .franchise__list {
   display: flex;
   flex-direction: column;

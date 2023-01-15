@@ -58,4 +58,25 @@
      refs.modalReadMore.classList.toggle("is-hidden");
   }
 
+  refs.modalBuynow.addEventListener('submit', e => {
+    refs.modalBuynow.classList.toggle("is-hidden");
+  })
+
+  refs.modalFranchise.addEventListener('submit', e => {
+    refs.modalFranchise.classList.toggle("is-hidden");
+  })
+
+  refs.modalLocation.addEventListener('submit', e => {
+    refs.modalLocation.classList.toggle("is-hidden");
+  })
+  
+  refs.modalProduct.addEventListener('submit', e => {
+    refs.modalProduct.classList.toggle("is-hidden");
+  })
+
+  refs.modalReadMore.addEventListener('submit', e => {
+    refs.modalReadMore.classList.toggle("is-hidden");
+  })
+  
+
 })();
