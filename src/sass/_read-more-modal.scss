@@ -1,0 +1,91 @@
+.read-more {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 280px;
+  height: 459px;
+  transform: translate(-50%, -50%);
+  transition: transform 300ms linear;
+  background: var(--primary_text-color);
+  border-radius: 10px;
+  padding: 28px;
+  @include respond-min('tablets') {
+    padding: 32px 60px;
+    width: 568px;
+    height: 449px;
+  }
+}
+.read-more__title {
+  font-family: var(--secondary-font);
+  color: var(--secondary-black-color);
+  @include font(16, 400, 24, 0);
+  text-align: center;
+  margin-bottom: 20px;
+  @include respond-min('tablets') {
+    @include font(20, 400, 28, 0);
+    margin-bottom: 32px;
+  }
+}
+
+.read-more__iframe {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin-bottom: 20px;
+  width: 224px;
+  height: 199px;
+  border-radius: 10px;
+  @include respond-min('tablets') {
+    width: 448px;
+    height: 205px;
+    margin-bottom: 32px;
+    padding-top: 0;
+  }
+}
+.read-more__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.read-more__text {
+  text-align: left;
+  @include font(14, 400, 20, 0);
+  @include respond-min('tablets') {
+    @include font(16, 400, 22, 0);
+  }
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background: rgba(80, 77, 77, 0.5);
+  transition: opacity 300ms linear, visibility 300ms linear;
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  fill: var(--secondary-black-color);
+  background: var(--primary-white-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
+  transition-delay: 0;
+  &:hover {
+    fill: var(--accent_color);
+  }
+}
