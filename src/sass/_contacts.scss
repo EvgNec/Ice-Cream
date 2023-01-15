@@ -1,6 +1,6 @@
 .contacts-position {
     position: absolute;
-    top: -420px;
+    top: -353px;
 
     @media screen and (min-width:768px) {
         position: static;
@@ -65,7 +65,7 @@
         background-color: #fcfcfc;
         display: flex;
         flex-direction: column;
-        padding: 40px 24px;
+        padding: 40px 32px 24px 32px;
 
 
         @media screen and (min-width:768px) {
@@ -87,7 +87,7 @@
         border-radius: 6px;
         padding: 4px 22px;
         font-weight: 500;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 140%;
         text-align: center;
         letter-spacing: 0.04em;
@@ -95,17 +95,26 @@
         margin-bottom: 8px;
         width: fit-content;
 
+        @media screen and (min-width:768px) {
+        font-size: 16px;
+        padding: 4px 14px;
+        }
+
 
 
     }
 
     &_name {
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 186%;
         letter-spacing: 0.04em;
         color: #131313;
         margin-bottom: 12px;
+
+        @media screen and (min-width:768px) {
+                font-size: 14px;
+            }
 
         @media screen and (min-width:1200px) {
             font-size: 16px;
@@ -116,11 +125,15 @@
     &_address {
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 183%;
         letter-spacing: 0.04em;
         color: #D6936D;
-
+        
+        @media screen and (min-width:768px) {
+            font-size: 14px;
+        }
+       
         @media screen and (min-width:1200px) {
             font-size: 16px;
 
@@ -135,14 +148,14 @@
     &-adres_tel {
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 150%;
         color: #131313;
         margin-bottom: 6px;
 
         @media screen and (min-width:768px) {
             margin-bottom: 4px;
-
+            font-size: 14px;
         }
 
         @media screen and (min-width:1200px) {
@@ -155,9 +168,13 @@
     &-adres_mail {
         font-style: normal;
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 150%;
         color: #131313;
+
+        @media screen and (min-width:768px) {
+            font-size: 14px;
+        }
 
         @media screen and (min-width:1200px) {
             font-size: 16px;
@@ -172,7 +189,7 @@
     }
 }
 
-.contacts-list_items:not(:first-child) {
+.contacts-list_items:nth-child(3) {
     margin-top: 16px;
 
     @media screen and (min-width:768px) {
@@ -199,8 +216,13 @@
 
 .contacts_address-dop {
     position: relative;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width:768px) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
 }
 
 .contacts_address-dop::after {
@@ -216,9 +238,13 @@
 
 .contacts-work_items {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 186%;
     color: #131313;
+
+    @media screen and (min-width:768px) {
+        font-size: 14px;
+    }
 
     @media screen and (min-width:1200px) {
         font-size: 16px;
@@ -226,9 +252,13 @@
 
     &-time {
         font-weight: 500;
-        font-size: 14px;
+        font-size: 12px;
         line-height: 186%;
         color: #907E82;
+
+        @media screen and (min-width:768px) {
+            font-size: 14px;
+        }
 
         @media screen and (min-width:1200px) {
             font-size: 16px;
