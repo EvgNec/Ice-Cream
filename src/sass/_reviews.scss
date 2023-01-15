@@ -1,0 +1,133 @@
+.review {
+}
+
+.review .container {
+  position: relative;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+.review__wallpapers {
+  position: absolute;
+  top: -32px;
+  @include respond-min('tablets') {
+    top: -28px;
+  }
+  @include respond-min('tablets') {
+    top: -142px;
+  }
+  @include respond-min('pc') {
+    bottom: -198px;
+  }
+}
+.review {
+  display: flex;
+  background-color: transparent;
+  //   background-image: url(../images/img/icecream-background-pc.jpg);
+  background-image: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.review__wallpapers {
+  overflow: hidden;
+}
+
+.review__wallpapers,
+.review__wallpaper-1,
+.review__wallpaper-2,
+.review__wallpaper-3 {
+  width: 280px;
+  height: 130px;
+  @include respond-min('tablets') {
+    width: 440px;
+    height: 204px;
+  }
+  @include respond-min('tablets') {
+    width: 704px;
+    height: 324px;
+  }
+  @include respond-min('pc') {
+    width: 1012px;
+    height: 422px;
+  }
+}
+.review__wallpaper-1:nth-child(1) {
+  animation: first 10s infinite;
+}
+.review__wallpaper-2:nth-child(2) {
+  animation: second 10s infinite;
+}
+.review__wallpaper-3:nth-child(3) {
+  animation: third 10s infinite;
+}
+
+@keyframes first {
+  0%,
+  5%,
+  85%,
+  90%,
+  100% {
+    transform: translate(0, 0);
+  }
+  15% {
+    transform: translate(-1200px, 0);
+  }
+  20% {
+    transform: translate(-1200px, 0);
+  }
+  35% {
+    transform: translate(-1200px, 422px);
+  }
+  40% {
+    transform: translate(-1200px, 422px);
+  }
+  55% {
+    transform: translate(1200px, 422px);
+  }
+  60% {
+    transform: translate(1200px, 422px);
+  }
+  75% {
+    transform: translate(1200px, 0);
+  }
+}
+@keyframes second {
+  20%,
+  35%,
+  45% {
+    transform: translate(0, -422px);
+  }
+  65% {
+    transform: translate(-1200px, -422px);
+  }
+  85% {
+    transform: translate(-1200px, 0);
+  }
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes third {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  45% {
+    transform: translate(0, -422px);
+  }
+  55% {
+    transform: translate(0, -844px);
+  }
+  65% {
+    transform: translate(0, -844px);
+  }
+  70% {
+    transform: translate(0, -844px);
+  }
+}
