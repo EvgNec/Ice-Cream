@@ -1,13 +1,20 @@
 .reviews {
   position: relative;
+  padding-bottom: 40px;
+  @include respond-min('phone') {
+    padding-bottom: 80px;
+  }
+  @include respond-min('tablets') {
+    padding-bottom: 80px;
+  }
+  @include respond-min('pc') {
+    padding-bottom: 100px;
+  }
 }
 .custom-reviews {
   padding: 0;
   margin-top: 80px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%);
+
   width: 280px;
   height: 466px;
   overflow: hidden;
@@ -123,11 +130,12 @@
 }
 
 .slider__navigation {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  @include respond-min('pc') {
+    margin-top: 32px;
+  }
 }
 
 .radio-nav {
