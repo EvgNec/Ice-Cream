@@ -24,13 +24,13 @@
                     </ul>
                 </nav>
                 <div class="header__button-container">
-                    <button type="button" class="header__button-burger">
+                    <button type="button" class="header__button-burger" data-menu-open>
                         <svg class="header__ico-burger">
                             <use href="./images/icons.svg#icon-burger">
                             </use>
                         </svg>
                     </button>
-                    <button type="button" class="header__button-buy">Buy now
+                    <button type="button" class="header__button-buy" modal-buynow-open>Buy now
                         <svg class="header__ico-bold">
                             <use href="./images/icons.svg#icon-right-bold">
                             </use>
@@ -46,7 +46,6 @@
                     <span>passion</span>
                 </h1>
             </div>
-
             <div class="group">
                 <picture>
                     <source srcset="./images/dots/comp-1x.png 1x, ./images/dots/comp-2x.png 2x"
@@ -91,7 +90,7 @@
                 </div>
             </div>
             <div class="hero__button-container">
-                <a href="#products" class="link button-prod__link">Products</a>
+                <a modal-product-open href="#products" class="link button-prod__link">Products</a>
                 <a href="#about" class="button-made__link">How it’s made?</a>
             </div>
             <div class="chain">
@@ -103,3 +102,42 @@
         </section>
     </div>
 </header>
+<div class="mobile-menu is-hidden" data-menu>
+    <div class="mobile-menu__hat">
+        <div class="header__logo-ice">
+            <picture>
+                <source srcset="./images/logo-ice/tab-1x.png 1x, ./images/logo-ice/tab-2x.png 2x"
+                    media="(min-width: 768px)">
+                <source srcset="./images/logo-ice/mob480-1x.png 1x, ./images/logo-ice/mob480-2x.png 2x"
+                    media="(min-width: 480px)">
+                <source srcset="./images/logo-ice/mob320-1x.png 1x, ./images/logo-ice/mob320-2x.png 2x"
+                    media="(max-width: 479.33px)">
+                <img src="./images/logo-ice/ice.png" width="100%" height="100%" alt="Морозивко" />
+            </picture>
+        </div>
+        <button type="button" class="mobile-menu__close" data-menu-close>
+            <svg class="header__ico-burger">
+                <use href="./images/icons.svg#icon-close">
+                </use>
+            </svg>
+        </button>
+    </div>
+    <div class="mobile-menu__nav">
+        <button type="button" data-menu-close1 class="mobile-menu__btn"><a href="#home"
+                class="link mobile-menu__link">Home</a></button>
+        <button type="button" data-menu-close2 class="mobile-menu__btn"><a href="#about"
+                class="link mobile-menu__link">How it’s
+                made?</a></button>
+        <button type="button" data-menu-close3 class="mobile-menu__btn"><a href="#products"
+                class="link mobile-menu__link">Our
+                products</a></button>
+        <button type="button" data-menu-close4 class="mobile-menu__btn"><a href="#contacts"
+                class="link mobile-menu__link">Contact</a></button>
+        <button type="button" class="mobile-menu__buy" data-menu-close5 modal-buynow-open>Buy now
+            <svg class="header__ico-bold">
+                <use href="./images/icons.svg#icon-right-bold">
+                </use>
+            </svg>
+        </button>
+    </div>
+</div>
