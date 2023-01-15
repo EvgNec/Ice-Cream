@@ -1,6 +1,6 @@
 .reviews {
   position: relative;
-  background-image: url(/src/images/reviews/Backgroud_mobile.jpg);
+  background-image: url(../images/reviews/Backgroud_mobile.jpg);
   padding-top: 178px;
   padding-bottom: 393px;
   @include respond-min('phone') {
@@ -10,12 +10,12 @@
   @include respond-min('tablets') {
     padding-top: 283px;
     padding-bottom: 379px;
-    background-image: url(/src/images/reviews/Background_tablet.jpg);
+    background-image: url(../images/reviews/Background_tablet.jpg);
   }
   @include respond-min('pc') {
     padding-top: 464px;
     padding-bottom: 228px;
-    background-image: url(/src/images/reviews/Backgroud_desktop.jpg);
+    background-image: url(../images/reviews/Backgroud_desktop.jpg);
   }
 }
 .custom-reviews {
