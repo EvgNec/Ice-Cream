@@ -11,7 +11,7 @@
 .review__wallpapers {
   position: absolute;
   top: -32px;
-  @include respond-min('tablets') {
+  @include respond-min('mobile') {
     top: -28px;
   }
   @include respond-min('tablets') {
