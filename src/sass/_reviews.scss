@@ -1,23 +1,3 @@
-.review .container {
-  position: relative;
-  display: flex;
-  margin: auto;
-  align-items: center;
-  justify-content: center;
-}
-.review__wallpapers {
-  position: absolute;
-  top: -32px;
-  @include respond-min('tablets') {
-    top: -28px;
-  }
-  @include respond-min('tablets') {
-    top: -142px;
-  }
-  @include respond-min('pc') {
-    bottom: -198px;
-  }
-}
 .review {
   display: flex;
   background-color: transparent;
@@ -27,9 +7,27 @@
   background-size: cover;
   background-position: center;
 }
-
+.review .container {
+  position: relative;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
 .review__wallpapers {
   overflow: hidden;
+  position: absolute;
+  top: -32px;
+  z-index: 1;
+  @include respond-min('phone') {
+    top: -28px;
+  }
+  @include respond-min('tablets') {
+    top: -142px;
+  }
+  @include respond-min('pc') {
+    bottom: -198px;
+  }
 }
 
 .review__wallpapers,
@@ -39,7 +37,7 @@
   border-radius: 24px;
   width: 280px;
   height: 130px;
-  @include respond-min('tablets') {
+  @include respond-min('phone') {
     width: 440px;
     height: 204px;
   }
@@ -54,15 +52,247 @@
 }
 .review__wallpaper-1:nth-child(1) {
   animation: first 10s infinite;
+  @include respond-min('phone') {
+    animation: first-480 10s infinite;
+  }
+  @include respond-min('tablets') {
+    animation: first-768 10s infinite;
+  }
+  @include respond-min('pc') {
+    animation: first-1200 10s infinite;
+  }
 }
 .review__wallpaper-2:nth-child(2) {
   animation: second 10s infinite;
+
+  @include respond-min('phone') {
+    animation: second-480 10s infinite;
+  }
+  @include respond-min('tablets') {
+    animation: second-768 10s infinite;
+  }
+  @include respond-min('pc') {
+    animation: second-1200 10s infinite;
+  }
 }
 .review__wallpaper-3:nth-child(3) {
   animation: third 10s infinite;
+
+  @include respond-min('phone') {
+    animation: third-480 10s infinite;
+  }
+  @include respond-min('tablets') {
+    animation: third-768 10s infinite;
+  }
+  @include respond-min('pc') {
+    animation: third-1200 10s infinite;
+  }
 }
 
 @keyframes first {
+  0%,
+  5%,
+  85%,
+  90%,
+  100% {
+    transform: translate(0, 0);
+  }
+  15% {
+    transform: translate(-320px, 0);
+  }
+  20% {
+    transform: translate(-320px, 0);
+  }
+  35% {
+    transform: translate(-320px, 130px);
+  }
+  40% {
+    transform: translate(-320px, 130px);
+  }
+  55% {
+    transform: translate(320px, 130px);
+  }
+  60% {
+    transform: translate(320px, 130px);
+  }
+  75% {
+    transform: translate(320px, 0);
+  }
+}
+@keyframes second {
+  20%,
+  35%,
+  45% {
+    transform: translate(0, -130px);
+  }
+  65% {
+    transform: translate(-320px, -130px);
+  }
+  85% {
+    transform: translate(-320px, 0);
+  }
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes third {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  45% {
+    transform: translate(0, -130px);
+  }
+  55% {
+    transform: translate(0, -260px);
+  }
+  65% {
+    transform: translate(0, -260px);
+  }
+  70% {
+    transform: translate(0, -260px);
+  }
+}
+@keyframes first-480 {
+  0%,
+  5%,
+  85%,
+  90%,
+  100% {
+    transform: translate(0, 0);
+  }
+  15% {
+    transform: translate(-480px, 0);
+  }
+  20% {
+    transform: translate(-480px, 0);
+  }
+  35% {
+    transform: translate(-480px, 204px);
+  }
+  40% {
+    transform: translate(-480px, 204px);
+  }
+  55% {
+    transform: translate(480px, 204px);
+  }
+  60% {
+    transform: translate(480px, 204px);
+  }
+  75% {
+    transform: translate(480px, 0);
+  }
+}
+@keyframes second-480 {
+  20%,
+  35%,
+  45% {
+    transform: translate(0, -204px);
+  }
+  65% {
+    transform: translate(-480px, -204px);
+  }
+  85% {
+    transform: translate(-480px, 0);
+  }
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes third-480 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  45% {
+    transform: translate(0, -204px);
+  }
+  55% {
+    transform: translate(0, -408px);
+  }
+  65% {
+    transform: translate(0, -408px);
+  }
+  70% {
+    transform: translate(0, -408px);
+  }
+}
+
+@keyframes first-768 {
+  0%,
+  5%,
+  85%,
+  90%,
+  100% {
+    transform: translate(0, 0);
+  }
+  15% {
+    transform: translate(-768px, 0);
+  }
+  20% {
+    transform: translate(-768px, 0);
+  }
+  35% {
+    transform: translate(-768px, 327px);
+  }
+  40% {
+    transform: translate(-768px, 327px);
+  }
+  55% {
+    transform: translate(768px, 327px);
+  }
+  60% {
+    transform: translate(768px, 327px);
+  }
+  75% {
+    transform: translate(768px, 0);
+  }
+}
+@keyframes second-768 {
+  20%,
+  35%,
+  45% {
+    transform: translate(0, -327px);
+  }
+  65% {
+    transform: translate(-768px, -327px);
+  }
+  85% {
+    transform: translate(-768px, 0);
+  }
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(0, 0);
+  }
+}
+@keyframes third-768 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  45% {
+    transform: translate(0, -327px);
+  }
+  55% {
+    transform: translate(0, -654px);
+  }
+  65% {
+    transform: translate(0, -654px);
+  }
+  70% {
+    transform: translate(0, -654px);
+  }
+}
+
+@keyframes first-1200 {
   0%,
   5%,
   85%,
@@ -92,7 +322,8 @@
     transform: translate(1200px, 0);
   }
 }
-@keyframes second {
+
+@keyframes second-1200 {
   20%,
   35%,
   45% {
@@ -111,7 +342,7 @@
     transform: translate(0, 0);
   }
 }
-@keyframes third {
+@keyframes third-1200 {
   0%,
   100% {
     transform: translate(0, 0);
