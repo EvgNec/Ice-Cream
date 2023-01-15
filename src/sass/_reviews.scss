@@ -39,6 +39,7 @@
 .review__wallpaper-1,
 .review__wallpaper-2,
 .review__wallpaper-3 {
+  border-radius: 24px;
   width: 280px;
   height: 130px;
   @include respond-min('tablets') {
