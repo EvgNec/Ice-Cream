@@ -2,13 +2,11 @@ $breakpoints: (
   'phone': 480px,
   'tablets': 768px,
   'pc': 1200px,
-  ) !default;
+) !default;
 
 @mixin respond-min($breakpoint) {
-
   // If the key exists in the map
   @if map-has-key($breakpoints, $breakpoint) {
-
     // Prints a media query based on the value
     @media (min-width: map-get($breakpoints, $breakpoint)) {
       @content;
@@ -23,10 +21,8 @@ $breakpoints: (
 }
 
 @mixin respond-max($breakpoint) {
-
   // If the key exists in the map
   @if map-has-key($breakpoints, $breakpoint) {
-
     // Prints a media query based on the value
     @media (max-width: map-get($breakpoints, $breakpoint)) {
       @content;
@@ -43,16 +39,14 @@ $breakpoints: (
 @mixin font($fs: 14, $fw: 400, $lh: 16, $ls: 0.02) {
   font-size: $fs + px;
   font-weight: $fw;
-  line-height: calc($lh / $fs
-  );
-letter-spacing: $ls + em;
+  line-height: calc($lh / $fs);
+  letter-spacing: $ls + em;
 }
 
 @mixin retina {
-
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     @content;
   }
 }

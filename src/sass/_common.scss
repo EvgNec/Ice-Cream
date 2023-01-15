@@ -9,25 +9,23 @@
 
 .container {
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
   margin: 0 auto;
-}
+  padding-left: 20px;
+  padding-right: 20px;
 
-@media (min-width: 480px) {
-  .container {
-    width: 480px;
+  @include respond-min('phone') {
+    width: var(--size-mobile);
   }
-}
 
-@media (min-width: 768px) {
-  .container {
-    width: 768px;
+  @include respond-min('tablets') {
+    width: var(--size-tablets);
+    padding-left: 32px;
+    padding-right: 32px;
   }
-}
 
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px;
+  @include respond-min('pc') {
+    width: var(--size-pc);
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }

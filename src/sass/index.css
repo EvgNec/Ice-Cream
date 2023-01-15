@@ -1,3 +1,15 @@
+@charset "UTF-8";
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+
+
 :root {
   /* основний колір тексту */
   --primary_text-color: #fcfcfc;
@@ -19,13 +31,68 @@
   --gray-bg-color: #ababab;
   /* колір фону фісташковий*/
   --pistachio-bg-color: #d6936d;
-  /* колір радіо-кнопок в секції відгуків*/
-  --main-radio-btn-color: #d9d9d9;
-
-  --main-font: 'Montserrat', sans-serif;
-  --secondary-font: 'Seymour One', sans-serif;
-
+  --main-font: "Montserrat", sans-serif;
+  --secondary-font: "Seymour One", sans-serif;
   --size-mobile: 480px;
   --size-tablets: 768px;
   --size-pc: 1200px;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+ul,
+ol {
+  margin: 0px;
+  padding-left: 0px;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}
+
+body {
+  font-family: var(--main-font);
+}
+
+textarea {
+  resize: none;
+}/*# sourceMappingURL=index.css.map */
