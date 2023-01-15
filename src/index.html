@@ -1,52 +1,55 @@
 <!DOCTYPE html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" type="image/ico" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./sass/index.scss" />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Page title</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Seymour+One&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="shortcut icon" type="image/ico" href="./images/favicon.ico" />
-  <link rel="stylesheet" href="./sass/index.scss" />
-  <script type="module" src="./index.js"></script>
-</head>
+  <body>
+    <!-- Хедер Герой -->
+    <include src="./partials/header.html"></include>
+    <!-- Товар, продукція -->
+    <include src="./partials/products.html"></include>
+    <!-- About -->
+    <include src="./partials/about.html"></include>
+    <!-- Переваги -->
+    <include src="./partials/advantages.html"></include>
+    <!-- Відгуки -->
+    <include src="./partials/reviews.html"></include>
+    <!-- Відгуки -->
+    <include src="./partials/custom-reviews.html"></include>
+    <!-- Адреси -->
+    <include src="./partials/contacts.html"></include>
+    <!--  футер -->
+    <include src="./partials/footer.html"></include>
+    <!--  modal -->
+    <include src="./partials/modal-product-ice-creame.html"></include>
+    <include src="./partials/modal-buynow.html"></include>
 
-<body>
-  <!-- Хедер Герой -->
-  <include src="./partials/header.html"></include>
-  <!-- Товар, продукція -->
-  <include src="./partials/products.html"></include>
-  <!-- About -->
-  <include src="./partials/about.html"></include>
-  <!-- Переваги -->
-  <include src="./partials/advantages.html"></include>
-  <!-- Відгуки -->
-  <include src="./partials/reviews.html"></include>
-  <!-- Відгуки -->
-  <include src="./partials/custom-reviews.html"></include>
-  <!-- Адреси -->
-  <include src="./partials/contacts.html"></include>
-  <!--  футер -->
-  <include src="./partials/footer.html"></include>
-  <!--  modal -->
-  <include src="./partials/modal-products.html"></include>
-  <include src="./partials/modal-buynow.html"></include>
+    <!--  футер модалка our-locations-->
+    <include src="./partials/our-location-madol.html"></include>
+    <!--  футер модалка franchise-->
+    <include src="./partials/franchise.html"></include>
+    <!-- модалка read more с видео вставкой -->
+    <include src="./partials/read-more-modal.html"></include>
 
-  <!--  футер модалка our-locations-->
-  <include src="./partials/our-location-madol.html"></include>
-  <!--  футер модалка franchise-->
-  <include src="./partials/franchise.html"></include>
-  <!-- модалка read more с видео вставкой -->
-  <include src="./partials/read-more-modal.html"></include>
-
-  <script src="./modal.js"></script>
-</body>
-
+    <script src="./modal.js"></script>
+  </body>
 </html>
