@@ -1,5 +1,6 @@
 .section-products {
-  margin-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
   background-position: center;
   background-size: cover;
@@ -48,7 +49,6 @@
   text-align: center;
   color: var(--secondary-black-color);
   margin-bottom: 12px;
-  padding-top: 60px;
 
   @include respond-min('phone') {
     font-size: 18px;
@@ -123,24 +123,20 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 123px;
-  min-width: 224px;
 
-  @media screen and (max-width: 768px) {
-    margin-bottom: 168px;
+  @media screen and (max-width: 767px) {
 
-    &:last-child {
-      margin-bottom: 60px;
+  &:not(:last-child) {
+      margin-bottom: 168px;
     }
-    min-width: 250px;
+    
+    max-width: 250px;
     min-height: 428px;
-  }
-
-  @include respond-min('phone') {
   }
 
   @include respond-min('tablets') {
     padding-top: 108px;
-    margin-bottom: 60px;
+
     width: calc((100% - 32px) / 3);
   }
 
@@ -161,7 +157,11 @@
   display: inline-block;
 
   position: absolute;
-  top: 50%;
+
+  @media screen and (min-width: 1200px) {
+    top: 50%;
+  }
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -150%);
 
@@ -215,7 +215,11 @@
   content: '';
   display: inline-block;
   position: absolute;
-  top: 50%;
+  @media screen and (min-width: 1200px) {
+    top: 50%;
+  }
+
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -150%);
 
@@ -269,7 +273,11 @@
   content: '';
   display: inline-block;
   position: absolute;
-  top: 50%;
+  @media screen and (min-width: 1200px) {
+    top: 50%;
+  }
+
+  top: 45%;
   left: 50%;
   transform: translate(-50%, -150%);
 
@@ -380,10 +388,8 @@
 .products-item__button {
   border: none;
   background-color: transparent;
-
-  @include respond-min('phone') {
-    margin-bottom: 16px;
-  }
+  margin-bottom: 16px;
+  padding: 20px 34px;
 
   @include respond-min('pc') {
     margin-bottom: 60px;
