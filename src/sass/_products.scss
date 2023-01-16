@@ -196,12 +196,13 @@
     height: 302px;
     background-image: url(../images/cream-pc.png);
     background-size: 302px 302px;
-  }
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/cream-pc@2x.png);
-    background-size: 302px 302px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/cream-pc@2x.png);
+      background-size: 302px 302px;
+    }
   }
 }
 

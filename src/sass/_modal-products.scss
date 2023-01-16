@@ -92,21 +92,9 @@
 }
 
 .modal-product-img {
-  position: relative;
-  left: calc(50% - 86px);
-  height: 163px;
-
-  &__product {
-    position: absolute;
-    top: 9px;
-    left: 20px;
-  }
-
-  &__background {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  margin: auto;
+  justify-content: center;
+  display: flex;
 }
 
 .modal-ingrediant {
@@ -241,4 +229,20 @@
     @include font(12, 500, 28);
     padding-top: 10px;
   }
+}
+
+.border-yellow {
+  border: solid var(--dark-yellow-bg-color);
+}
+
+.border-pistachio {
+  border: solid var(--dark-pistachio-bg-color);
+}
+
+.background-yellow {
+  background: var(--yellow-bg-color);
+}
+
+.background-pistachio {
+  background: var(--pistachio-bg-color);
 }

@@ -92,7 +92,6 @@
 .section-about__body {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 30px;
   max-width: 320px;
 
   @media screen and (min-width: 768px) {
@@ -100,6 +99,7 @@
     padding: 0;
     margin-left: 17px;
     width: 340px;
+    padding-right: 30px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -117,13 +117,17 @@
   line-height: 194%;
   letter-spacing: 0.04em;
   text-align: center;
-  color: var(--secondary-bg-color);
+  color: var(--primary_text-color);
   margin-top: 46px;
   margin-bottom: 27px;
   font-weight: 400;
   outline: transparent;
   width: 220px;
   margin-left: auto;
+
+  @media screen and (max-width: 768px) {
+    margin-right: auto;
+  }
 
   @media screen and (min-width: 480px) {
     font-size: 14px;
@@ -138,7 +142,7 @@
     margin-top: 50px;
     margin-bottom: 19px;
     text-align: left;
-    width: 400px;
+    width: 336px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -146,6 +150,7 @@
     line-height: 1.75;
     margin-top: 4px;
     margin-bottom: 54px;
+    width: 463px;
   }
 }
 
@@ -155,8 +160,6 @@
   background-color: var(--dark-yellow-bg-color);
   display: block;
   text-align: center;
-  // justify-content: center;
-  // align-items: center;
   width: 164px;
   height: 42px;
   font-size: 14px;
@@ -177,6 +180,10 @@
   &:hover {
     transform: scale(1.1);
     background-color: var(--dark-green-bg-color);
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: auto;
   }
 
   @media screen and (min-width: 480px) {
