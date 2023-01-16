@@ -1,7 +1,7 @@
 .backdrop {
   &.is-hidden .read-more {
-    transform: translate(-50%, -50%) scale(0, 9);
-  }
+    transform: translate(0%, -50%);
+}
 }
 
 .read-more {
