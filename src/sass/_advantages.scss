@@ -48,7 +48,6 @@
   animation: infinite 1000ms;
   animation-name: changeBgColor;
   animation-duration: 3000ms;
-
 }
 
 .item__icecream::before {
@@ -65,7 +64,6 @@
   animation: infinite 1000ms;
   animation-name: changeBgColor;
   animation-duration: 3000ms;
-
 }
 
 .section-advantages__point {
@@ -74,13 +72,11 @@
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: var(--primary_text-color);
-
 }
 
 .section-advantages__text {
   font-family: var(--main-font);
   font-style: normal;
-  margin-top: 12px;
   border-radius: 10px;
   color: var(--primary_text-color);
   box-shadow: 0 12.5px 10px rgb(38, 51, 38), 0 20px 80px rgb(217, 236, 236);
@@ -117,7 +113,9 @@
   }
 
   .section-advantages__text {
-    padding-top: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 8px;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.7;
@@ -142,6 +140,9 @@
   }
 
   .section-advantages__text {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-top: 10px;
     font-size: 14px;
     line-height: 1.7;
   }
@@ -156,7 +157,7 @@
 
 @media screen and (min-width: 1200px) {
   .section-advantages {
-    padding-bottom: 178px;
+    padding-bottom: 140px;
     padding-top: 60px;
   }
 
@@ -174,9 +175,8 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.7;
-    width: 350px;
     letter-spacing: 0.02em;
-    padding-top: 0px;
+    margin-bottom: 90px;
   }
 
   .section-advantages__point {
