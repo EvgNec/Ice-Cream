@@ -88,6 +88,9 @@
   overflow-y: scroll;
   border: 2px solid #f8d24e;
   border-radius: 10px;
+  @include respond-max('phone') {
+    padding: 20px 28px;
+  }
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -122,43 +125,58 @@
 }
 .form-group {
   margin-bottom: 16px;
-  margin-left: 60px;
-  margin-right: 60px;
+  display: flex;
+  justify-content: center;
+  @include respond-max('pc') {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
 .wrapper {
   position: relative;
 }
 .modal-input {
-  width: 100%;
+  display: block;
+  min-width: 352px;
   height: 42px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
   padding: 11px 16px;
 
+  @include respond-max('phone') {
+    min-width: 240px;
+  }
+
   font-size: 14px;
   color: var(--secondary-black-color);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   &:focus {
-    border: 1px solid var(----dark-yellow-bg-color);
+    border: 2px solid var(--dark-green-bg-color);
     outline: transparent;
   }
 }
 
 .form-group-text {
   margin-bottom: 20px;
-  margin-left: 60px;
-  margin-right: 60px;
+  justify-content: center;
+  @include respond-max('pc') {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
 }
 
 .modal-text {
-  width: 100%;
+  min-width: 352px;
   height: 120px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
 
+  @include respond-max('phone') {
+    min-width: 240px;
+  }
   padding: 11px 16px;
   font-weight: 400;
   font-size: 12px;
@@ -169,7 +187,7 @@
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {
-    border: 1px solid var(----dark-yellow-bg-color);
+    border: 2px solid var(--dark-green-bg-color);
     outline: transparent;
   }
   &::placeholder {

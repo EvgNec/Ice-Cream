@@ -1,3 +1,9 @@
+.backdrop {
+  &.is-hidden .franchise {
+    transform: translate(-50%, -50%) scale(0, 9);
+  }
+}
+
 .franchise__list {
   display: flex;
   flex-direction: column;
@@ -66,15 +72,22 @@
     padding: 8px 12px;
     margin: 0;
     width: 100%;
-    color: var(--secondary-black-color);
+
+    border: 1px solid #84a178;
     border-radius: 10px;
-    border-color: var(--primari-light-bg-color);
+    color: var(--secondary-black-color);
+    background: rgba(248, 210, 78, 0.1);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &::placeholder {
       color: var(--secondary-black-color);
     }
     @include respond-min('tablets') {
       height: 42px;
       padding: 11px 16px;
+    }
+    &:focus {
+      border: 2px solid var(--dark-green-bg-color);
+      outline: transparent;
     }
   }
 
@@ -84,15 +97,21 @@
     margin: 0;
     padding: 8px 12px;
     width: 100%;
+    background: rgba(248, 210, 78, 0.1);
     color: var(--secondary-black-color);
     border-radius: 10px;
     border-color: var(--primari-light-bg-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     @include respond-min('tablets') {
       height: 84px;
       padding: 11px 16px;
     }
     &::placeholder {
       color: var(--secondary-black-color);
+    }
+    &:focus {
+      border: 2px solid var(--dark-green-bg-color);
+      outline: transparent;
     }
   }
 }

@@ -1,21 +1,21 @@
 .footer {
   background-color: var(--primari-light-bg-color);
+  padding-top: 1px;
 
   &__text {
     @include font(18, 700, 22);
     text-transform: uppercase;
     color: var(--primary_text-color);
     margin-bottom: 16px;
-    
+
     @include respond-min('tablets') {
       @include font(26, 700, 32, 0.04);
       margin-bottom: 8px;
     }
-     @include  respond-min('pc'){
-    @include font(30, 400, 37, 0.04);
-    margin-bottom: 14px
-  } 
-  
+    @include respond-min('pc') {
+      @include font(30, 400, 37, 0.04);
+      margin-bottom: 14px;
+    }
   }
   &__text-big {
     @include font(34, 700, 41, 0.04);
@@ -26,19 +26,19 @@
       @include font(48, 700, 59, 0.06);
       margin-bottom: 30px;
     }
-      @include  respond-min('pc'){
-    @include font(58, 700, 71, 0.04);
-    margin-bottom: 60px
-  } 
+    @include respond-min('pc') {
+      @include font(58, 700, 71, 0.04);
+      margin-bottom: 60px;
+    }
   }
 }
 .footer-slogan {
   width: 235px;
- @include respond-min('phone') {
+  @include respond-min('phone') {
     width: 250px;
   }
   @include respond-min('tablets') {
-    width: 100%;;
+    width: 100%;
   }
   @include respond-min('pc') {
     width: 100%;
@@ -55,7 +55,7 @@
   @include respond-min('pc') {
     width: 100%;
   }
-   @include respond-min('tablets') {
+  @include respond-min('tablets') {
     width: 100%;
   }
 
@@ -67,10 +67,10 @@
       margin-top: 60px;
       margin-bottom: 35px;
     }
-     @include respond-min('pc') {
+    @include respond-min('pc') {
       margin-top: 20px;
       margin-bottom: 40px;
-     }
+    }
   }
   &__item {
     background-color: var(--dark-yellow-bg-color);
@@ -78,10 +78,10 @@
     &:not(:last-child) {
       margin-right: 20px;
     }
-      @include respond-min('tablets') {
-       &:not(:last-child) {
-      margin-right: 30px;
-    }
+    @include respond-min('tablets') {
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
   }
   &__link {
@@ -110,7 +110,7 @@
     @include font(14, 700, 26, 0.02);
     margin-bottom: 60px;
   }
-   @include respond-min('pc') {
+  @include respond-min('pc') {
     @include font(16, 700, 30, 0.02);
   }
 
@@ -125,9 +125,9 @@
   @include respond-min('tablets') {
     margin-bottom: 12px;
   }
-    @include respond-min('pc') {
+  @include respond-min('pc') {
     width: calc(var(--size-pc) - 32px);
-    margin: auto
+    margin: auto;
   }
 }
 .footer-year {
@@ -139,7 +139,7 @@
     @include font(14, 700, 26);
     padding-bottom: 12px;
   }
-    @include respond-min('pc') {
+  @include respond-min('pc') {
     @include font(12, 700, 22);
     padding-bottom: 12px;
     margin-top: 12px;
