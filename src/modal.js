@@ -1,8 +1,16 @@
 (() => {
   const refs = {
-    openModalProductBtn: document.querySelector("[modal-product-open]"),
-    closeModalProductBtn: document.querySelector("[modal-product-close]"),
-    modalProduct: document.querySelector("[modal-product]"),
+    openModalIceCreameBtn: document.querySelector("[modal-ice-creame-open]"),
+    closeModalIceCreameBtn: document.querySelector("[modal-ice-creame-close]"),
+    modalIceCreame: document.querySelector("[modal-ice-creame]"),
+
+    openModalIceCoffeBtn: document.querySelector("[modal-ice-coffee-open]"),
+    closeModalIceCoffeBtn: document.querySelector("[modal-ice-coffee-close]"),
+    modalIceCoffe: document.querySelector("[modal-ice-coffee]"),
+    
+    openModalMilkshakeBtn: document.querySelector("[modal-milkshake-open]"),
+    closeModalMilkshakeBtn: document.querySelector("[modal-milkshake-close]"),
+    modalMilkshake: document.querySelector("[modal-milkshake]"),
 
     openModalBuynowBtn: document.querySelector("[modal-buynow-open]"),
     closeModalBuynowBtn: document.querySelector("[modal-buynow-close]"),
@@ -21,8 +29,14 @@
     modalReadMore: document.querySelector("[modal-read-more]"),
   };
 
-  refs.openModalProductBtn.addEventListener("click", toggleModalProduct);
-  refs.closeModalProductBtn.addEventListener("click", toggleModalProduct);
+  refs.openModalIceCreameBtn.addEventListener("click", toggleModalIceCreame);
+  refs.closeModalIceCreameBtn.addEventListener("click", toggleModalIceCreame);
+
+  refs.openModalIceCoffeBtn.addEventListener("click", toggleModalIceCoffe);
+  refs.closeModalIceCoffeBtn.addEventListener("click", toggleModalIceCoffe);
+
+  refs.openModalMilkshakeBtn.addEventListener("click", toggleModalMilkshake);
+  refs.closeModalMilkshakeBtn.addEventListener("click", toggleModalMilkshake);
 
    refs.openModalBuynowBtn.addEventListener("click", toggleModalBuynow);
   refs.closeModalBuynowBtn.addEventListener("click", toggleModalBuynow);
@@ -37,11 +51,21 @@
   refs.closeModalReadMoreBtn.addEventListener("click", toggleModalReadMore);
 
 
-  function toggleModalProduct() {
-    refs.modalProduct.classList.toggle("is-hidden");
+  function toggleModalIceCreame() {
+    refs.modalIceCreame.classList.toggle("is-hidden");
     
   }
   
+  function toggleModalIceCoffe() {
+    refs.modalIceCoffe.classList.toggle("is-hidden");
+    
+  }
+
+  function toggleModalMilkshake() {
+    refs.modalMilkshake.classList.toggle("is-hidden");
+    
+  }
+
   function toggleModalBuynow() {
      refs.modalBuynow.classList.toggle("is-hidden");
   }
@@ -70,9 +94,18 @@
     refs.modalLocation.classList.toggle("is-hidden");
   })
   
-  refs.modalProduct.addEventListener('submit', e => {
-    refs.modalProduct.classList.toggle("is-hidden");
+  refs.modalIceCreame.addEventListener('submit', e => {
+    refs.modalIceCreame.classList.toggle("is-hidden");
   })
+
+  refs.modalIceCoffe.addEventListener('submit', e => {
+    refs.modalIceCoffe.classList.toggle("is-hidden");
+  })
+
+  refs.modalMilkshake.addEventListener('submit', e => {
+    refs.modalMilkshake.classList.toggle("is-hidden");
+  })
+
 
   refs.modalReadMore.addEventListener('submit', e => {
     refs.modalReadMore.classList.toggle("is-hidden");

@@ -2,41 +2,19 @@
   margin-bottom: 40px;
   text-align: center;
   background-position: center;
-
   background-size: cover;
+  background-image: url(../images/fon-mobile.png);
 
   text-align: center;
   margin-left: auto;
   margin-right: auto;
 
-  @include respond-min('phone') {
-    background-image: url(../images/fon-mobile.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/fon-mobile@2x.png);
-    }
-  }
-
   @include respond-min('tablets') {
     background-image: url(../images/fon-tablet.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/fon-tablet@2x.png);
-    }
   }
 
   @include respond-max('pc') {
     background-image: url(../images/fon-desktop.png);
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/fon-desktop@2x.png);
-    }
   }
 }
 
@@ -70,7 +48,7 @@
   text-align: center;
   color: var(--secondary-black-color);
   margin-bottom: 12px;
-  margin-top: 60px;
+  padding-top: 60px;
 
   @include respond-min('phone') {
     font-size: 18px;
@@ -102,11 +80,9 @@
   margin-right: auto;
   margin-left: auto;
 
-  @include respond-min('phone') {
-    font-size: 30px;
-    line-height: calc(38 / 30);
-    margin-bottom: 145px;
-  }
+  font-size: 30px;
+  line-height: calc(38 / 30);
+  margin-bottom: 145px;
 
   @include respond-min('tablets') {
     font-size: 34px;
@@ -122,8 +98,17 @@
 }
 
 .products__list {
-  @include respond-min('tablets') {
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 250px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
     gap: 16px;
   }
 
@@ -137,29 +122,26 @@
   border-radius: 24px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 123px;
+  min-width: 224px;
 
-  @include respond-max('phone') {
+  @media screen and (max-width: 768px) {
     margin-bottom: 168px;
 
     &:last-child {
       margin-bottom: 60px;
     }
-
     min-width: 250px;
     min-height: 428px;
   }
 
   @include respond-min('phone') {
-    padding-top: 123px;
-    min-width: 224px;
   }
 
   @include respond-min('tablets') {
     padding-top: 108px;
     margin-bottom: 60px;
     width: calc((100% - 32px) / 3);
-    min-width: 428px;
-    min-height: 224px;
   }
 
   @include respond-min('pc') {
@@ -172,11 +154,6 @@
 .item__cream {
   background-color: #aec6a5;
   border-radius: 24px;
-
-  @include respond-max('phone') {
-    margin-left: 95px;
-    margin-right: 95px;
-  }
 }
 
 .item__cream:before {
@@ -188,18 +165,16 @@
   left: 50%;
   transform: translate(-50%, -150%);
 
-  @include respond-min('phone') {
-    width: 200px;
-    height: 200px;
-    background-image: url(../images/cream-mob.png);
-    background-size: 200px 200px;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/cream-mob.png);
+  background-size: 200px 200px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/cream-mob@2x.png);
-      background-size: 200px 200px;
-    }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/cream-mob@2x.png);
+    background-size: 200px 200px;
   }
 
   @include respond-min('tablets') {
@@ -221,24 +196,18 @@
     height: 302px;
     background-image: url(../images/cream-pc.png);
     background-size: 302px 302px;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/cream-pc@2x.png);
-      background-size: 302px 302px;
-    }
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/cream-pc@2x.png);
+    background-size: 302px 302px;
   }
 }
 
 .item__coffee {
   background-color: #efd478;
   border-radius: 24px;
-
-  @include respond-max('phone') {
-    margin-left: 95px;
-    margin-right: 95px;
-  }
 }
 
 .item__coffee:before {
@@ -249,18 +218,16 @@
   left: 50%;
   transform: translate(-50%, -150%);
 
-  @include respond-min('phone') {
-    width: 200px;
-    height: 200px;
-    background-image: url(../images/coffee-mob.png);
-    background-size: 200px 200px;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/coffee-mob.png);
+  background-size: 200px 200px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/coffee-mob@2x.png);
-      background-size: 200px 200px;
-    }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/coffee-mob@2x.png);
+    background-size: 200px 200px;
   }
 
   @include respond-min('tablets') {
@@ -295,11 +262,6 @@
 .item__milkshakes {
   background-color: #d6936d;
   border-radius: 24px;
-
-  @include respond-max('phone') {
-    margin-left: 95px;
-    margin-right: 95px;
-  }
 }
 
 .item__milkshakes:before {
@@ -310,18 +272,16 @@
   left: 50%;
   transform: translate(-50%, -150%);
 
-  @include respond-min('phone') {
-    width: 200px;
-    height: 200px;
-    background-image: url(../images/milkshake-mob.png);
-    background-size: 200px 200px;
+  width: 200px;
+  height: 200px;
+  background-image: url(../images/milkshake-mob.png);
+  background-size: 200px 200px;
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../images/milkshake-mob@2x.png);
-      background-size: 200px 200px;
-    }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/milkshake-mob@2x.png);
+    background-size: 200px 200px;
   }
 
   @include respond-min('tablets') {
@@ -361,11 +321,9 @@
   letter-spacing: 0.04em;
   color: var(--secondary-black-color);
 
-  @include respond-min('phone') {
-    font-size: 20px;
-    line-height: calc(24 / 20);
-    margin-bottom: 40px;
-  }
+  font-size: 20px;
+  line-height: calc(24 / 20);
+  margin-bottom: 40px;
 
   @include respond-min('tablets') {
     font-size: 22px;
@@ -407,7 +365,6 @@
     padding-left: 26px;
     padding-right: 26px;
   }
-
   @include respond-min('pc') {
     font-size: 16px;
     line-height: calc(28 / 16);
