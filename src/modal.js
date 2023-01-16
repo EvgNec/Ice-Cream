@@ -7,13 +7,13 @@
     openModalIceCoffeBtn: document.querySelector("[modal-ice-coffee-open]"),
     closeModalIceCoffeBtn: document.querySelector("[modal-ice-coffee-close]"),
     modalIceCoffe: document.querySelector("[modal-ice-coffee]"),
-    
+
     openModalMilkshakeBtn: document.querySelector("[modal-milkshake-open]"),
     closeModalMilkshakeBtn: document.querySelector("[modal-milkshake-close]"),
     modalMilkshake: document.querySelector("[modal-milkshake]"),
 
     openModalBuynowBtn: document.querySelector("[modal-buynow-open]"),
-    closeModalBuynowBtn: document.querySelector("[modal-buynow-close]"),
+    closeModalBuyNowBtn: document.querySelector("[modal-buy-now-close]"),
     modalBuynow: document.querySelector("[modal-buynow]"),
 
     openModalLocationBtn: document.querySelector("[modal-location-open]"),
@@ -23,7 +23,7 @@
     openModalFranchiseBtn: document.querySelector("[modal-franchise-open]"),
     closeModalFranchiseBtn: document.querySelector("[modal-franchise-close]"),
     modalFranchise: document.querySelector("[modal-franchise]"),
-    
+
     openModalReadMoreBtn: document.querySelector("[modal-read-more-open]"),
     closeModalReadMoreBtn: document.querySelector("[modal-read-more-close]"),
     modalReadMore: document.querySelector("[modal-read-more]"),
@@ -38,7 +38,7 @@
     modal: document.querySelector("[data-menu]"),
 
   };
-  
+
   refs.openModalBtn.addEventListener("click", toggleModal);
   refs.closeModalBtn.addEventListener("click", toggleModal);
   refs.close1ModalBtn.addEventListener("click", toggleModal);
@@ -65,10 +65,10 @@
   refs.openModalMilkshakeBtn.addEventListener("click", toggleModalMilkshake);
   refs.closeModalMilkshakeBtn.addEventListener("click", toggleModalMilkshake);
 
-   refs.openModalBuynowBtn.addEventListener("click", toggleModalBuynow);
-  refs.closeModalBuynowBtn.addEventListener("click", toggleModalBuynow);
-  
-   refs.openModalLocationBtn.addEventListener("click", toggleModalLocation);
+  refs.openModalBuynowBtn.addEventListener("click", toggleModalBuynow);
+  refs.closeModalBuyNowBtn.addEventListener("click", toggleModalBuynow);
+
+  refs.openModalLocationBtn.addEventListener("click", toggleModalLocation);
   refs.closeModalLocationBtn.addEventListener("click", toggleModalLocation);
 
   refs.openModalFranchiseBtn.addEventListener("click", toggleModalFranchise);
@@ -80,33 +80,33 @@
 
   function toggleModalIceCreame() {
     refs.modalIceCreame.classList.toggle("is-hidden");
-    
+
   }
-  
+
   function toggleModalIceCoffe() {
     refs.modalIceCoffe.classList.toggle("is-hidden");
-    
+
   }
 
   function toggleModalMilkshake() {
     refs.modalMilkshake.classList.toggle("is-hidden");
-    
+
   }
 
   function toggleModalBuynow() {
-     refs.modalBuynow.classList.toggle("is-hidden");
-  }
-  
-  function toggleModalLocation() {
-     refs.modalLocation.classList.toggle("is-hidden");
-  }
-  
-  function toggleModalFranchise() {
-     refs.modalFranchise.classList.toggle("is-hidden");
+    refs.modalBuynow.classList.toggle("is-hidden");
   }
 
-    function toggleModalReadMore() {
-     refs.modalReadMore.classList.toggle("is-hidden");
+  function toggleModalLocation() {
+    refs.modalLocation.classList.toggle("is-hidden");
+  }
+
+  function toggleModalFranchise() {
+    refs.modalFranchise.classList.toggle("is-hidden");
+  }
+
+  function toggleModalReadMore() {
+    refs.modalReadMore.classList.toggle("is-hidden");
   }
 
   refs.modalBuynow.addEventListener('submit', e => {
@@ -120,7 +120,7 @@
   refs.modalLocation.addEventListener('submit', e => {
     refs.modalLocation.classList.toggle("is-hidden");
   })
-  
+
   refs.modalIceCreame.addEventListener('submit', e => {
     refs.modalIceCreame.classList.toggle("is-hidden");
   })
@@ -137,6 +137,6 @@
   refs.modalReadMore.addEventListener('submit', e => {
     refs.modalReadMore.classList.toggle("is-hidden");
   })
-  
+
 
 })();

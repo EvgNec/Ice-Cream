@@ -17,65 +17,10 @@
 
 .backdrop {
   &.is-hidden .modal-buynow {
-    transform: translate(-50%, -50%) scale(0, 9);
+    transform: translate(0%, -50%);
   }
 }
 
-.modal-button {
-  margin: 0 auto;
-  align-items: center;
-  padding: 12px 34px;
-  display: block;
-
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  color: var(--secondary-black-color);
-  background-color: var(--dark-yellow-bg-color);
-  cursor: pointer;
-  border-radius: 10px;
-  text-align: center;
-  border: none;
-  @include font(14, 600, 17);
-
-  &:hover {
-    background-color: var(--dark-green-bg-color);
-  }
-  &:focus {
-    color: var(--primary_text-color);
-    background-color: var(--dark-green-bg-color);
-    fill: var(--primary_text-color);
-    outline: none;
-  }
-}
-
-.button-close {
-  position: absolute;
-  top: 8px;
-  right: 8px;
-
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  top: 8px;
-  color: var(--primary-text-tittle-color);
-  background-color: var(--background-maintittle-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &__icon {
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    fill: currentColor;
-    display: flex;
-    justify-content: center;
-  }
-  &:hover .button-close__icon,
-  &:focus .button-close__icon {
-    fill: var(--dark-green-bg-color);
-  }
-}
 .modal-buynow {
   width: 90%;
   position: absolute;
@@ -83,9 +28,8 @@
   left: 50%;
   padding: 32px 54px;
   max-width: 568px;
-  height: 659px;
+  height: 644px;
   background-color: var(--primary_text-color);
-  overflow-y: scroll;
   border: 2px solid #f8d24e;
   border-radius: 10px;
   @include respond-max('phone') {
@@ -107,22 +51,7 @@
   width: 1px;
 }
 
-.modal-ingrediant {
-  @include font(20, 500, 28);
-  text-align: center;
-  margin-bottom: 24px;
-}
-.ingredients-wrapper {
-  display: flex;
-  margin-bottom: 40px;
-}
-.ingredients {
-  @include font(14, 400, 25);
-}
-.ingredients-right {
-  margin-left: auto;
-  text-align: right;
-}
+
 .form-group {
   margin-bottom: 16px;
   display: flex;
@@ -229,37 +158,51 @@
   }
 
   &__items {
-    border: solid var(--primari-bg-color);
     border-radius: 50% 50% 10% 10%;
     height: 186px;
     width: 132px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover,
-    &:focus {
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  &__items:nth-child(2) {  
+    border: solid var(--primari-bg-color);
+    &:hover {
       background-color: var(--primari-bg-color);
       box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
     }
   }
 
-  &__items:nth-child(2) {
+  &__items:nth-child(4) {
     border: solid var(--yellow-bg-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       background-color: var(--yellow-bg-color);
       box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
     }
   }
-  &__items:nth-child(3) {
+
+  &__items:nth-child(6) {
     border: solid var(--pistachio-bg-color);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &:hover,
     &:focus {
       background-color: var(--pistachio-bg-color);
       box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
     }
   }
+}
+
+#checkbox-ice-creame:checked + .buynow-icons__items {
+  background-color: var(--primari-bg-color);
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+}
+
+#checkbox-ice-coffee:checked + .buynow-icons__items {
+  background-color: var(--yellow-bg-color);
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
+}
+
+#checkbox-milkshake:checked + .buynow-icons__items {
+  background-color: var(--pistachio-bg-color);
+  box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
 }

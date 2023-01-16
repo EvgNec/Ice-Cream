@@ -1,24 +1,33 @@
 <div class="backdrop is-hidden" modal-buynow>
   <div class="modal-buynow">
+    <button class="button-close" modal-buy-now-close>
+      <svg class="button-close__icon" widht="11" height="11">
+        <use href="./images/icons.svg#icon-close-icon"></use>
+      </svg>
+    </button>
     <form>
-      <button class="button-close" modal-buynow-close>
-        <svg class="button-close__icon" widht="11" height="11">
-          <use href="./images/icons.svg#icon-close-icon"></use>
-        </svg>
-      </button>
       <p class="modal-buynow__tittle">Buy now</p>
       <ul class="buynow-icons list">
+        <input class="is-hidden" type="radio" name="product" id="checkbox-ice-creame" value="1">
         <li class="buynow-icons__items">
-          <img class="buynow-icons__product" src="./images/ice-creame-modal-icon.png" alt="" />
-          <p class="buynow-icons__text">ice creame</p>
+          <label for="checkbox-ice-creame">
+            <img class="buynow-icons__product" src="./images/ice-creame-modal-icon.png" alt="" />
+            <p class="buynow-icons__text">ice creame</p>
+          </label>
         </li>
+        <input class="is-hidden"  type="radio" name="product" id="checkbox-ice-coffee" value="2">
         <li class="buynow-icons__items">
-          <img class="buynow-icons__product" src="./images/ice-coffe-modal-icon.png" alt="" />
-          <p class="buynow-icons__text">ice coffee</p>
+          <label for="checkbox-ice-coffee">
+            <img class="buynow-icons__product" src="./images/ice-coffe-modal-icon.png" alt="" />
+            <p class="buynow-icons__text">ice coffee</p>
+          </label>
         </li>
+        <input class="is-hidden" type="radio" name="product" id="checkbox-milkshake" value="3">
         <li class="buynow-icons__items">
-          <img class="buynow-icons__product" src="./images/milkshake-model-icon.png" alt="" />
-          <p class="buynow-icons__text">milkshake</p>
+          <label for="checkbox-milkshake">
+            <img class="buynow-icons__product" src="./images/milkshake-model-icon.png" alt="" />
+            <p class="buynow-icons__text">milkshake</p>
+          </label>
         </li>
       </ul>
 
