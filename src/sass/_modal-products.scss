@@ -1,9 +1,11 @@
 .backdrop {
   overflow-y: auto;
+  transition: opacity 1000ms linear, visibility 300ms linear;
 
 
   &.is-hidden .modal-product {
     transform: translate(150%, -50%);
+    transition: all 1000ms; transform: translate(150%, -50%);
 
   }
 }

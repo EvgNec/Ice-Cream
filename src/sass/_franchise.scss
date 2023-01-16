@@ -1,6 +1,9 @@
 .backdrop {
+  transition: opacity 1000ms linear, visibility 300ms linear;
   &.is-hidden .franchise {
-    transform: translate(150%, -50%);
+     transform: translate(150%, -50%);
+    transition: all 1000ms; transform: translate(150%, -50%)
+
   }
 }
 

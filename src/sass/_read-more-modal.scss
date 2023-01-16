@@ -1,5 +1,5 @@
 .backdrop {
-  transition: opacity 300ms linear, visibility 300ms linear;
+  transition: opacity 1000ms linear, visibility 300ms linear;
   &.is-hidden .read-more {
     transform: translateX(-100px) rotate(90deg) translateY(-800px);
   }
