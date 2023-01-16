@@ -1,6 +1,7 @@
 .section-about {
   background-color: var(--primari-light-bg-color);
   margin-bottom: -1px;
+  padding-top: 60px;
 }
 
 .section-about__image {
@@ -26,7 +27,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--secondary-bg-color);
-  padding-top: 60px;
+  
 
   @media screen and (min-width: 480px) {
     font-size: 22px;
