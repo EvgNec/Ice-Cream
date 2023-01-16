@@ -355,11 +355,19 @@ html {
     margin-top: 12px;
     width: 40px;
     height: 16px;
+    fill: #FCFCFC;
+    transition: fill 250ms, scale 250ms;
     @media screen and (max-width: 767.27px) {
         display: none;
     }
         @media screen and (min-width: 1200px) {
             margin-top: 24px;
+        }
+        &:hover {
+            fill: #f8d24e;
+        }
+        &:active {
+            scale: 0.8
         }
 }
 .chain {
