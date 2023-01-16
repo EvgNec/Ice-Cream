@@ -118,10 +118,40 @@
       font-size: 14px;
     }
 
-    @media screen and (min-width: 1200px) {
-      font-size: 16px;
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+        }
+
     }
-  }
+
+    &_address {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 183%;
+        letter-spacing: 0.04em;
+        color: #D6936D;
+        
+        @media screen and (min-width:768px) {
+            font-size: 14px;
+        }
+       
+        @media screen and (min-width:1200px) {
+            font-size: 16px;
+
+        }
+    }
+
+    &-work_list {
+        margin-bottom: 8px;
+    }
+
+
+    &-adres_tel {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        l
 
   &-work_list {
     margin-bottom: 8px;
@@ -145,12 +175,13 @@
     }
   }
 
-  &-adres_mail {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 150%;
-    color: #131313;
+&-adres_mail {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        color: #131313;
+        margin-right: 5px;
 
     @media screen and (min-width: 768px) {
       font-size: 14px;
@@ -179,7 +210,9 @@
 
 .contacts_address:hover,
 .contacts_address:focus {
-  text-decoration: underline;
+    text-decoration: underline;
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .contacts-list_items:not(:last-child) {
@@ -356,5 +389,27 @@
 }
 
 .contacts_icon {
-  fill: currentColor;
+    fill: currentColor;
+}
+
+.contacts-adres_icon-mail,
+.contacts-adres_icon-tel{
+    opacity: 0;
+    fill: currentColor;
+}
+
+.contacts-adres_tel:hover .contacts-adres_icon-tel,
+.contacts-adres_tel:focus .contacts-adres_icon-tel{
+    opacity: 1;
+}
+.contacts-adres_mail:hover .contacts-adres_icon-mail,
+.contacts-adres_mail:focus .contacts-adres_icon-mail{
+    opacity: 1;
+}
+   
+.contacts-adres_mail:hover,
+.contacts-adres_tel:focus,
+.contacts-adres_mail:focus,
+.contacts-adres_tel:hover{
+color: blueviolet;
 }
