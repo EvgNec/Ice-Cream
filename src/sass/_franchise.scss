@@ -1,8 +1,8 @@
 .backdrop {
   &.is-hidden .franchise {
-   transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
   }
-  }
+}
 
 .franchise__list {
   display: flex;

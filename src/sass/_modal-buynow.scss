@@ -51,7 +51,6 @@
   width: 1px;
 }
 
-
 .form-group {
   margin-bottom: 16px;
   display: flex;
@@ -162,10 +161,10 @@
     height: 186px;
     width: 132px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  
-  &__items:nth-child(2) {  
+
+  &__items:nth-child(2) {
     border: solid var(--primari-bg-color);
     &:hover {
       background-color: var(--primari-bg-color);
