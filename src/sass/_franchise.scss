@@ -1,9 +1,7 @@
 .backdrop {
-  transition: opacity 1000ms linear, visibility 300ms linear;
   &.is-hidden .franchise {
      transform: translate(150%, -50%);
-    transition: all 1000ms; transform: translate(150%, -50%)
-
+    transition:  1000ms; 
   }
 }
 
@@ -24,7 +22,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 300ms linear;
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
   background: var(--primary_text-color);
   border-radius: 10px;
   padding: 28px;
