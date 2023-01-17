@@ -65,17 +65,18 @@
 .wrapper {
   position: relative;
 }
+
 .modal-input {
   display: block;
-  min-width: 352px;
   height: 42px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
   padding: 11px 16px;
+  min-width: 240px;
 
-  @include respond-max('tablets') {
-    min-width: 240px;
+  @include respond-min('tablets') {
+    min-width: 352px;
   }
 
   font-size: 14px;
@@ -98,14 +99,14 @@
 }
 
 .modal-text {
-  min-width: 352px;
   height: 120px;
   background: rgba(248, 210, 78, 0.1);
   border: 1px solid #84a178;
   border-radius: 10px;
+  min-width: 240px;
 
-  @include respond-max('tablets') {
-    min-width: 240px;
+  @include respond-min('tablets') {
+    min-width: 352px;
   }
   padding: 11px 16px;
   font-weight: 400;
@@ -131,18 +132,16 @@
   width: 100%;
   justify-content: center;
   margin-bottom: 48px;
-
-  @include respond-min('tablets') {
-    &__items:not(:last-child) {
-      margin-right: 32px;
-    }
+  flex-direction: column;
+  align-items: center;
+  &__items:not(:last-child) {
+    margin-bottom: 10px;
   }
 
-  @include respond-max('tablets') {
-    flex-direction: column;
-    align-items: center;
+  @include respond-min('tablets') {
+    flex-direction: row;
     &__items:not(:last-child) {
-      margin-bottom: 10px;
+      margin-right: 32px;
     }
   }
 
