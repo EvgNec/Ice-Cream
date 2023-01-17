@@ -1,14 +1,14 @@
 .backdrop {
   &.is-hidden .modal-product {
     transform: translate(150%, -50%);
-    transition: 1000ms; 
+    transition: 1000ms;
   }
 }
 
 .modal-product {
   // width: 90%;
   position: absolute;
-  top: 70%;
+  top: 62%;
   left: 50%;
   padding: 32px 54px;
   width: 568px;
@@ -22,8 +22,7 @@
   @include respond-max('tablets') {
     padding: 20px 28px;
     max-width: 320px;
-     width: 90%;
-    
+    width: 90%;
   }
 
   &__tittle {
@@ -57,12 +56,12 @@
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  
+
   @include respond-max('tablets') {
-   max-width: 280px;
+    max-width: 280px;
   }
-   @include respond-max('ps') {
-   max-width: 480px;
+  @include respond-max('ps') {
+    max-width: 480px;
   }
 }
 
