@@ -1,12 +1,7 @@
 .backdrop {
-  overflow-y: auto;
-  transition: opacity 1000ms linear, visibility 300ms linear;
-
-
   &.is-hidden .modal-product {
     transform: translate(150%, -50%);
-    transition: all 1000ms; transform: translate(150%, -50%);
-
+    transition: 1000ms; 
   }
 }
 
@@ -22,17 +17,14 @@
   border: 2px solid #f8d24e;
   border-radius: 10px;
   overflow: auto;
-
-
-
-
-  @include respond-max('phone') {
+  transform: translate(-50%, -50%);
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include respond-max('tablets') {
     padding: 20px 28px;
+    max-width: 320px;
+     width: 90%;
     
   }
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &__tittle {
     @include font(20, 400, 28);
@@ -66,10 +58,10 @@
   margin-left: auto;
   margin-right: auto;
   
-  @include respond-max('phone') {
+  @include respond-max('tablets') {
    max-width: 280px;
   }
-   @include respond-max('tablets') {
+   @include respond-max('ps') {
    max-width: 480px;
   }
 }
@@ -165,7 +157,7 @@
   &__items {
     &:not(:last-child) {
       margin-right: 20px;
-      @include respond-max('phone') {
+      @include respond-max('tablets') {
         margin-right: 6px;
       }
     }
