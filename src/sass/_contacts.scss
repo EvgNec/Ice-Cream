@@ -395,6 +395,7 @@
 }
 
 .contacts_address span {
+  display: none;
   @media screen and (min-width:1200px) {
     border-radius: 5px 5px 5px 5px;
       visibility: hidden;
@@ -406,6 +407,7 @@
       border-radius: 5px;
       // width: 20%;
       z-index: 1;
+      display: block;
   }
   
 }
