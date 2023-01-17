@@ -207,3 +207,36 @@
   background-color: var(--pistachio-bg-color);
   box-shadow: 0px 5.26027px 19.726px rgba(212, 20, 67, 0.1);
 }
+ 
+
+.form-group input:valid {
+  border-color: green;
+  color: green;
+  box-shadow: none;}
+
+.form-group input:invalid {
+  border-color: red;
+  color: red;
+  box-shadow: none;}
+
+.form-group input:focus:required:valid {
+  border-color: green;
+    color: green;
+    box-shadow: none;}
+
+.form-group input:focus{
+  border: 2px solid var(--dark-green-bg-color);
+  outline: transparent;
+  color: var(--secondary-black-color)
+}
+
+.form-group input::placeholder {
+  color: var(--secondary-black-color);
+  @include font(14, 400, 20);
+}
+
+.form-group input:placeholder-shown{
+  background: rgba(248, 210, 78, 0.1);
+    border: 1px solid #84a178;
+    color: var(--secondary-black-color);
+}
