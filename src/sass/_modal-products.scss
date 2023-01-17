@@ -60,7 +60,7 @@
   @include respond-max('tablets') {
     max-width: 280px;
   }
-  @include respond-max('ps') {
+  @include respond-max('pc') {
     max-width: 480px;
   }
 }
