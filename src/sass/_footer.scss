@@ -1,6 +1,10 @@
 .footer {
   background-color: var(--primari-light-bg-color);
   padding-top: 1px;
+  padding-bottom: 20px;
+  @include respond-min('tablets') {
+    padding-bottom: 12px;
+  }
 
   &__text {
     @include font(18, 700, 22);
@@ -134,14 +138,11 @@
   @include font(14, 700, 21);
   text-align: center;
   color: #7a7a7a;
-  padding-bottom: 20px;
   @include respond-min('tablets') {
     @include font(14, 700, 26);
-    padding-bottom: 12px;
   }
   @include respond-min('pc') {
     @include font(12, 700, 22);
-    padding-bottom: 12px;
     margin-top: 12px;
   }
 
